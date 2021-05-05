@@ -11,8 +11,7 @@
 
 
     </thead>
-    <tbody>
-        @foreach (Bug bug in Bugs)
+        @foreach (var bug in Bugs)
         {
             <tr>
                 <td>@bug.Id</td>
@@ -22,7 +21,6 @@
             </tr>
 
         }
-    </tbody>
 </table>
 
 @code {
